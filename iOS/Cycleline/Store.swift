@@ -28,8 +28,8 @@ final class Store: ObservableObject {
     private func seed() {
         let now = Date()
         entries = [
-            Entry(date: Calendar.current.date(byAdding: .day, value: -2, to: now) ?? now, severity: 4, note: "", note: "First logged entry"),
-            Entry(date: Calendar.current.date(byAdding: .day, value: -1, to: now) ?? now, severity: 6, note: "", note: "")
+            Entry(date: Calendar.current.date(byAdding: .day, value: -2, to: now) ?? now, severity: 4, note: "First logged entry"),
+            Entry(date: Calendar.current.date(byAdding: .day, value: -1, to: now) ?? now, severity: 6, note: "")
         ]
         save()
     }
